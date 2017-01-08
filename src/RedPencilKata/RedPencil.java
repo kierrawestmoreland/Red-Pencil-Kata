@@ -2,7 +2,7 @@ package RedPencilKata;
 
 public class RedPencil {
 
-	double originalPrice; // may need constructor for 
+	double originalPrice; 
 	double newPrice;
 	int dayOfSale;
 	
