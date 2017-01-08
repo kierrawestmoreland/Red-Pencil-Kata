@@ -3,20 +3,26 @@ package RedPencilKata;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class RedPencilTest {
 
+	RedPencil underTest;
+	
+	@Before
+	public void runBeforeEachTest(){
+		underTest = new RedPencil();
+	}
+	
 	@Test
 	public void shouldReturnOriginalPrice(){
-		RedPencil underTest = new RedPencil();
-		assertEquals(100, underTest.getOriginalPrice());
+		assertEquals(100, underTest.getOriginalPrice(), 0);
 	}
 	
 	@Test
 	public void priceReductionShouldStartSale(){
-		RedPencil underTest = new RedPencil();
-		assertTrue(underTest.isOnSale());
+		assertTrue(underTest.isOnSale(100, 80));
 	}
 	
 }

@@ -2,16 +2,18 @@ package RedPencilKata;
 
 public class RedPencil {
 
-	int originalPrice = 100; // may need constructor for 
+	double originalPrice = 100; // may need constructor for 
 	//int newPrice;
 	//boolean redPencilSale;
 	//int dayOfSale;
 	
-	public int getOriginalPrice() {
+	public double getOriginalPrice() {
 		return originalPrice;
 	}
 
-	public boolean isOnSale() {
-		return false;
+	public boolean isOnSale(double originalPrice, double newPrice) {
+		if (newPrice < (originalPrice * .95) && newPrice > (originalPrice * 70)){
+		}
+		return true;
 	}
 }
