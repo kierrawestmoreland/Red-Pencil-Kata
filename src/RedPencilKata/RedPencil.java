@@ -6,9 +6,12 @@ public class RedPencil {
 	//int newPrice;
 	//boolean redPencilSale;
 	//int dayOfSale;
-
 	
 	public int getOriginalPrice() {
 		return originalPrice;
+	}
+
+	public boolean isOnSale() {
+		return false;
 	}
 }
