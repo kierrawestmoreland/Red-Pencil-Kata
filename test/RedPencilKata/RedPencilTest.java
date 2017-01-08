@@ -12,7 +12,7 @@ public class RedPencilTest {
 	
 	@Before
 	public void runBeforeEachTest(){
-		underTest = new RedPencil();
+		underTest = new RedPencil(100, 80);
 	}
 	
 	@Test
@@ -22,7 +22,11 @@ public class RedPencilTest {
 	
 	@Test
 	public void priceReductionShouldStartSale(){
-		assertTrue(underTest.isOnSale(100, 80));
+		assertTrue(underTest.isOnSale());
 	}
 	
+	@Test 
+	public void saleCantBeMoreThan30Days(){
+		assertTrue(underTest.isOnSale(0));
+	}
 }
