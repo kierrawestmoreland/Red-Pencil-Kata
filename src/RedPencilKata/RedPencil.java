@@ -2,12 +2,13 @@ package RedPencilKata;
 
 public class RedPencil {
 
-	//int originalPrice;
+	int originalPrice = 100; // may need constructor for 
 	//int newPrice;
 	//boolean redPencilSale;
 	//int dayOfSale;
 
+	
 	public int getOriginalPrice() {
-		return 0;
+		return originalPrice;
 	}
 }
