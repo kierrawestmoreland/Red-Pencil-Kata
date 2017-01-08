@@ -17,12 +17,20 @@ public class RedPencil {
 	}
 	
 	public boolean isOnSale() {
-		if (newPrice < (originalPrice * .95) && newPrice > (originalPrice * 70)){
+		if (newPrice < (originalPrice * .95) && newPrice > (originalPrice * .70)){
+			return true;
 		}
-		return true;
+		else {
+			return false;
+		}
 	}
 
 	public boolean isOnSale(int daysOfSale) {
-		return false;
+		if(daysOfSale < 31){
+			return true;
+		}
+		else{
+			return false;
+		}
 	}
 }

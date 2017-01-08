@@ -27,6 +27,6 @@ public class RedPencilTest {
 	
 	@Test 
 	public void saleCantBeMoreThan30Days(){
-		assertTrue(underTest.isOnSale(0));
+		assertTrue(underTest.isOnSale(25));
 	}
 }
